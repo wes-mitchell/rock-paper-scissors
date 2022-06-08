@@ -72,7 +72,7 @@ namespace RockPaperScissors
 ");
             bool isNum = int.TryParse(Console.ReadLine(), out response);
 
-            if (!isNum)
+            if (!isNum || response < 0 || response > 3)
             {
                 Console.WriteLine(" ");
                 Console.WriteLine("Seriously? It's not that hard. Pick a number between 1 and 3.");
